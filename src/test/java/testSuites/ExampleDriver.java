@@ -11,10 +11,14 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import static conexion.DriverContext.setUP;
+
 public class ExampleDriver {
 
     @BeforeMethod
     public void inicioSesion(){
+        setUP("R9YNB06KBKJ","Android","C:\\Users\\Nayp.Marambio\\Downloads\\registroDeUsuarios.apk","R9YNB06KBKJ",false);
+    /*
         AppiumDriver driver;
         URL server = null;
         try {
@@ -24,12 +28,16 @@ public class ExampleDriver {
         }
 
         DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setCapability("deviceName","WGGECABMAUDELJ99");
+        cap.setCapability("deviceName","R9YNB06KBKJ");
         cap.setCapability("platformName","android");
         cap.setCapability("app","C:\\Users\\Nayp.Marambio\\Downloads\\registroDeUsuarios.apk");
-        cap.setCapability("udid","WGGECABMAUDELJ99");
+        cap.setCapability("udid","R9YNB06KBKJ");
         driver = new AndroidDriver(server,cap);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+     */
+
+   // setUP("R9YNB06KBKJ");
+
     }
 
     @Test
