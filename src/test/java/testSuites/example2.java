@@ -23,7 +23,7 @@ public class example2 {
 
     @AfterMethod
     public void cerraSsion(){
-      //  Reports.finalAssert();
+        Reports.finalAssert();
         DriverContext.quitDriver();
     }
 
